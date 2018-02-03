@@ -21,7 +21,7 @@
                        <!-- <img class="fondoCab" src="imagenes/flor.png"/>-->
                        <div class="opciones">
                            <img class="opcion" src="imagenes/iconos/logIn2.png" alt=""/>
-                            <a class="inicioSesion" href="">Inicio sesion</a>
+                            <a id="inicioSesion" href="inicioSesion.html">Inicio sesion</a>
                            <img class="opcion" src="imagenes/iconos/logoCarrito2.png" alt=""/>
                        </div>
                     </div>
@@ -33,7 +33,7 @@
                 <div class="espacioMenu">
                     <div class="menu">
                         <ul>
-                          <li><a href="">Home</a></li>
+                          <li><a href="index.html">Home</a></li>
                           <li><a href="dulces.html">Dulces</a></li>
                           <li><a href="">Salados</a></li>
                           <li><a href="">Bebidas</a></li>
@@ -55,6 +55,23 @@
                 <div class="cuerpo">
                     <div class="ofertas">
                         <div class="imagenesOfertas">
+                            <ul id="carrusel">
+                                <li>
+                                    <img src="imagenes/navidad.png">
+                                </li><!--
+                                <li>
+                                    <img src="imagenes/img2.png">
+                                </li>
+                                <li>
+                                    <img src="imagenes/img3.png">
+                                </li>
+                                <li>
+                                    <img src="imagenes/img8.png">
+                                </li>-->
+                                <div id="izquierda"><a>◄</a></div>
+                            <div id="derecha"><a>►</a></div>
+                            </ul>
+                             
                         </div>
                     </div>
                     <div class="botonesOfertas" >
@@ -69,7 +86,49 @@
                         </div>
                     </div>
                 </div>
+                <div class="cuerpoo">
+                    <!--<div id="animacionScroll">
+                        <img class="delante" src="1.jpg">
+                    </div>-->
+                    <div class="seccion">
+                        <p>Descubre las maravillas de</p>
+                        <div class="imagen1">
+                            <img src="imagenes/donut.png"/>
+                        </div>
+                    </div><!--
+                    <div class="imagen2">
+                      <div class="subject">
+                        <div class="category-color"></div>
+                        <div class="icon"><i class="fa fa-cogs"></i></div>
+                          <img src="1.jpg"/>
+                      </div>
+                    </div>
+                    <div class="imagen2">
+                      <div class="subject">
+                        <div class="category-color"></div>
+                        <div class="icon"><i class="fa fa-cogs"></i></div>
+                          <img src="3.jpg"/>
+                      </div>
+                    </div>-->
+                </div>
             </div>
+            <!--
+
+<img class="detras" src="2.jpg">
+                        <img class="lado" src="3.jpg">
+
+            <section id="revealAnim">
+                <div class="section-content">
+                    <div class="copy-container">
+                       <h2>Con el Poder de CSS, HTML5 y Javascript</h2>
+                    </div>
+                    <div class="images-container">
+                       <img class="front" src="img/html5.jpg" alt="html5 logo" />
+                       <img class="back" src="img/css3.jpg" alt="css3 logo" />
+                       <img class="side" src="img/javascript.jpg" alt="javascript logo" />
+                    </div>
+                </div>
+            </section>-->
             <footer class="grid_12">
                 <div class="pie">
                     <div class="icons">
@@ -87,5 +146,8 @@
             </footer>
             <div class="clear"></div>
         </main><!--fin del "div web" -->
+        <script type='text/javascript' src="js/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/animacionScroll.js"></script>
     </body>
 </html>

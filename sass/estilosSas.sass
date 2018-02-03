@@ -36,7 +36,7 @@ header
     height: 100px
     width: 620px
     
-.inicioSesion
+#inicioSesion
     float: left
     font-size: 15px
     margin-top: 65px
@@ -81,10 +81,48 @@ header
     background-color: $secundary-color
 
 /*----------menu Vertical----------*/
-.menuLateral
+
+    
+
+//.vertical
     float: left
-    height: 500px
+    list-style-type: none
+    margin: 0px
+    padding: 0px
     width: 220px
+    height: 460px
+    font-size: 10px
+    
+//.vertical ul li
+    float: left
+    width: 218px
+    list-style-type: none
+    margin: 0px
+    border-bottom: $borde-gris
+    border-left: $borde-gris
+    border-right: $borde-gris
+    
+//.vertical ul li a
+    background-color: white
+    color: black
+    text-decoration: none
+    display: block
+    padding: 20px
+    font-family: fuente
+    font-size: 20px
+    
+//.vertical li :hover
+    background: $secundary-color
+    border-left: 8px solid deeppink
+    
+//----------
+//height: 500px
+    width: 220px
+.menuLateral
+    
+    height: 500px
+    width: 200px
+    //background-color: pink
     
 .titulo
     height: 35px
@@ -94,37 +132,58 @@ header
     font-family: fuente
     font-size: 25px
     
-.vertical
+#menu 
     float: left
-    list-style-type: none
-    margin: 0px
-    padding: 0px
     width: 220px
-    height: 460px
-    font-size: 10px
+    height: 500px
+    //margin-top: 10px
+    //border: 1px solid black
     
-.vertical ul li
+#menu>ul>li 
     float: left
-    width: 218px
-    list-style-type: none
-    margin: 0px
-    border-bottom: $borde-gris
-    border-left: $borde-gris
-    border-right: $borde-gris
+    margin-left: 0px
+    border-bottom: 1px solid grey
+    border-right: 1px solid grey
+    border-left: 1px solid grey
     
-.vertical ul li a
-    background-color: white
-    color: black
-    text-decoration: none
+    
+#menu>ul>li a 
     display: block
-    padding: 20px
+    width: 218px
+    height: 50px
+    background: white
+    text-align: center
+    line-height: 60px
     font-family: fuente
     font-size: 20px
+    color: black
+    text-decoration: none
     
-.vertical li :hover
-    background: $secundary-color
-    border-left: 8px solid deeppink
+
+#menu>ul>li>ul 
+    display: none
+
+#menu>ul>li>ul>li 
+    margin: 0px
     
+    
+#menu>ul>li>ul>li>a 
+    background: papayawhip
+
+#menu>ul>li>ul>li>ul a 
+    background: #ff0
+
+#menu ul 
+    list-style: none
+    margin: 0
+    padding: 0
+    
+.primero
+    border-top: 1px solid grey
+    
+#menu li :hover
+    background-color: $secundary-color
+    //border-left: 8px solid deeppink
 /*--------------body---------------*/
 #contenedor
     height: 600px
@@ -147,11 +206,45 @@ header
     height: 60px
     width: 200px
     
+
+//.descripcion
+    opacity: 1
+    float: left
+    height: 188px
+    width: 200px
+    background-color: pink
+.caja 
+  width: 300px
+  height: 200px
+  position: relative 
+
+
+.caja p 
+  margin: auto 
+  color: #000
+  height: 188px
+  line-height: 200px /* igual height de la imagen */
+  background: #fff //papayawhip
+  transition: opacity .4s linear
+  cursor: pointer  
+  position: absolute
+  top: 0
+  right: 0
+  left: 0
+  opacity: 0
+
+.caja:hover p 
+  opacity: .75  
+
+//.descripcion:hover
+    display: visibility
+    
 /*--------------pie----------------*/
 
 .pie
     width: 940px
     height: 150px
+    margin-top: 30px
     background: -webkit-linear-gradient( white, #ffb3d9)
     background: -o-linear-gradient(white, #ffb3d9)
     background: -moz-linear-gradient(white, #ffb3d9)
@@ -177,13 +270,18 @@ header
 /*--------------botones del home----------------*/
 .cuerpo
     height: 500px
-    
+.cuerpoo
+    //height: 900px
+    //background-color: green
 .ofertas
     display: flex
     justify-content: center
     margin-top: 5px
     height: 300px
     background-color: papayawhip
+    margin: 0
+    padding: 0
+    
 
 .botonesOfertas
     display: flex
@@ -205,12 +303,396 @@ header
 .boton:active
     box-shadow: 3px 3px 3px 1px grey inset
     
+   
 .imagenesOfertas
+    display: flex
+    height: 300px
+    
+    
+#carrusel
     height: 300px
     width: 600px
-    border: 1px solid black
-    background-image: url(../imagenes/navidad.png)
+#carrusel li ul
+    width: 600px
+    heigth: 300px
+   
+    
+#izquierda, #derecha
+    position: absolute
+    margin-top: 100px
+    align-items: center
+    height: 300px
+    font-size: 50px
+    
 
+#derecha
+    margin-left: 550px
+#carrusel li
+    list-style: none
+    
+#carrusel ul
+    list-style: none
+    
+    
+#carrusel li img
+    float: left
+    height: 300px
+    width: 600px
+    margin-left: -30px
+
+#izquierda:hover, #derecha:hover
+    color: deeppink
+    cursor: pointer
+
+
+    
+
+//.delante
+    height: 300px
+    width: 470px
+    
+//.delante
+  float: left
+  width: 47%
+  margin: 0% 1.5% 3% 1.5%
+  background: #F5F5F5
+  padding: 15px
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2)
+  border: solid 1px #EAEAEA
+
+
+
+//.delante:hover,
+//.delante:active
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25)
+
+
+
+//.delante:nth-of-type(odd) 
+  width: 48.5%
+  margin: 0% 1.5% 3.0% 0%
+
+
+//.delante:nth-of-type(even) 
+  width: 48.5%
+  margin: 0% 0% 3.0% 1.5%
+
+//.cuerpoo #animacionScroll img 
+    -webkit-transition: -webkit-transform .6s .9s
+    -moz-transition: -moz-transform .6s .9s
+    transition: transform .6s .9s
+
+//.cuerpoo #animacionScroll .detras 
+    z-index: 2
+    -webkit-transform:translate3d(-40%, 0, 0)
+       -moz-transform:translate3d(-40%, 0, 0)
+            transform:translate3d(-40%, 0, 0)
+
+//.cuerpoo #animacionScroll .delante 
+    -webkit-transform:translate3d(61.6%, 0, 0)
+       -moz-transform:translate3d(61.6%, 0, 0)
+            transform:translate3d(61.6%, 0, 0)
+
+//.cuerpoo #animacionScroll .lado 
+    -webkit-transform:translate3d(-338%, 0, 0)
+       -moz-transform:translate3d(-338%, 0, 0)
+            transform:translate3d(-338%, 0, 0)
+
+//.viewing-page-2 .cuerpoo #animacionScroll img 
+    -webkit-transform: translate3d(0, 0, 0) //!important
+    -moz-transform: translate3d(0, 0, 0) //!important
+    transform: translate3d(0, 0, 0) //!important
+
+//.delante .entra 
+  transform: translateX(0)
+/*These styles contain basic styles for fomatting along with our animation css*/
+
+
+/*animation element*/
+
+//.animation-element 
+  opacity: 0
+  position: relative
+
+/*animation element sliding left*/
+.seccion
+    height: 300px
+    //background-color: pink
+    position: relative
+    border: 1px solid black
+    
+.seccion p
+    position: absolute
+    margin: 100px
+    margin-left: 150px
+    animation-name: none
+    animation-duration: 4s
+
+@keyframes example2
+    0%   
+        color: white
+    
+    25%   
+        color: white
+    100% 
+        color: black
+
+
+.imagen1 
+  opacity: 0
+  -moz-transition: all 1.5s linear
+  -webkit-transition: all 1.5s linear
+  -o-transition: all 1.5s linear
+  transition: all 1.5s linear
+  -moz-transform: translate3d(-200px, 0px, 0px)
+  -webkit-transform: translate3d(-200px, 0px, 0px)
+  -o-transform: translate(-200px, 0px)
+  -ms-transform: translate(-200px, 0px)
+  transform: translate3d(-200px, 0px, 0px)
+
+
+.imagen1.in-view 
+  opacity: 1
+  -moz-transform: translate3d(690px, 0px, 0px)
+  -webkit-transform: translate3d(690px, 0px, 0px)
+  -o-transform: translate(690px, 0px)
+  -ms-transform: translate(690px, 0px)
+  transform: translate3d(690px, 0px, 0px)
+
+/*animation slide left styled for testimonials*/
+
+.imagen1 
+  float: left
+  width: 200px 
+  margin: 0% 1.5% 3% 1.5%
+  //background: #F5F5F5
+  padding: 15px
+  //box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2)
+  //border: solid 1px #EAEAEA
+
+
+@keyframes example
+    0%   
+        -webkit-transform: rotate(0deg)
+        -moz-transform: rotate(0deg)
+        -o-transform: rotate(0deg)
+        -ms-transform: rotate(0deg)
+    
+        
+    100% 
+        -webkit-transform: rotate(360deg)
+        -moz-transform: rotate(360deg)
+        -o-transform: rotate(360deg)
+        -ms-transform: rotate(360deg)
+
+.imagen1 img
+    animation-name: none
+    animation-duration: 3s 
+    
+
+
+//.imagen1 img
+    -webkit-animation: 3s rotate linear infinite
+    animation: 3s rotate linear infinite
+    -moz-transform: rotate(0deg)
+    -webkit-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
+    -ms-transform: rotate(0deg)
+
+
+
+    
+//.animation-element.slide-left.testimonial:hover,
+//.animation-element.slide-left.testimonial:active
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25)
+
+
+//.animation-element.slide-left.testimonial:nth-of-type(odd) 
+  width: 48.5%;
+  margin: 0% 1.5% 3.0% 0%;
+
+
+//.animation-element.slide-left.testimonial:nth-of-type(even) 
+  width: 48.5%
+  margin: 0% 0% 3.0% 1.5%
+
+
+//.animation-element.slide-left.testimonial .header
+  float: left
+  width: 100%
+  margin-bottom: 10px
+
+//.animation-element.slide-left.testimonial .left
+  float: left
+  margin-right: 15px
+
+//.animation-element.slide-left.testimonial .right
+  float: left
+
+
+//.animation-element.slide-left.testimonial img 
+  width: 65px
+  height: 65px
+  border-radius: 50%
+  box-shadow: 0px 1px 3px rgba(51, 51, 51, 0.5)
+
+
+//.animation-element.slide-left.testimonial h3 
+  margin: 0px 0px 5px 0px
+
+//.animation-element.slide-left.testimonial h4 
+  margin: 0px 0px 5px 0px
+
+
+//.animation-element.slide-left.testimonial .content 
+  float: left
+  width: 100%
+  margin-bottom: 10px
+
+
+//.animation-element.slide-left.testimonial .rating
+
+//.animation-element.slide-left.testimonial i 
+  color: #aaa
+  margin-right: 5px
+/*These styles contain basic styles for fomatting along with our animation css*/
+// 3 -> 255    /2-> 400
+
+
+.subject 
+  float: left
+  width: 400px
+  margin: 0% 1.33% 2.66% 1.33%
+  background: #F5F5F5
+  padding: 15px
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2)
+  border: solid 1px #EAEAEA
+
+.imagen2 .subject 
+  opacity: 0
+  -moz-transition: all 700ms ease-out
+  -webkit-transition: all 700ms ease-out
+  -o-transition: all 700ms ease-out
+  transition: all 700ms ease-out
+  -moz-transform: translate3d(0px, 100px, 0px)
+  -webkit-transform: translate3d(0px, 100px, 0px)
+  -o-transform: translate(0px, 100px)
+  -ms-transform: translate(0px, 100px)
+  transform: translate3d(0px, 100, 0px)
+  -webkit-backface-visibility: hidden
+  -moz-backface-visibility: hidden
+  backface-visibility: hidden
+
+
+.imagen2.in-view .subject 
+  opacity: 1
+  -moz-transform: translate3d(0px, 0px, 0px)
+  -webkit-transform: translate3d(0px, 0px, 0px)
+  -o-transform: translate(0px, 0px)
+  -ms-transform: translate(0px, 0px)
+  transform: translate3d(0px, 0px, 0px)
+
+
+
+
+/*subject icon at top*/
+
+.subject .icon 
+  position: absolute
+  top: -20px
+  left: 50%
+  left: calc(50% - 20px)
+
+
+.subject .icon i 
+  width: 40px
+  height: 40px
+  color: rgb(255, 255, 255)
+  font-size: 150%
+  border-radius: 50%
+  text-align: center
+  padding: 7px
+
+/*Category color / icon color*/
+
+.subject .category-color 
+  height: 7px
+  position: absolute
+  top: 0px
+  left: 0px
+  width: 100%
+
+
+.subject.design .category-color,
+.subject.design .icon i 
+  background: #c0392b
+
+
+.subject .category-color,
+.subject .icon i 
+  background: #16a085
+
+
+.subject.photography .category-color,
+.subject.photography .icon i 
+  background: #2980b9
+
+
+
+
+/*-----------formulario-----------------*/
+.formulario
+    float: left
+    margin-left: 180px
+    margin-top: 20px
+    margin-bottom: 10px
+    height: 500px
+    width: 600px
+    background-color: #FFFDE1
+    font-family: calibri
+    font-size: 150%
+    border: 3px solid black
+    box-shadow:  2px -1px 8px 6px grey
+    border-radius: 20px
+    
+.formularioSesion
+    float: left
+    margin-left: 300px
+    margin-top: 30px
+    height: 200px
+    width: 300px
+    background-color: #FFFDE1
+    font-family: calibri
+    font-size: 150%
+    border: 3px solid black
+    border-radius: 20px
+    
+.cabeceraFormulario
+    height: 35px
+    text-align: center
+    font-family: fuente
+    font-size: 150%
+    background-color: $primary-color
+    border-radius: 15px 15px 0px 0px
+    
+.formularioRegistro
+    margin-top: 10px
+    margin-left: 100px
+.formInicio
+    margin-top: 10px
+    margin-left: 30px
+.formInicio #enviar
+    margin-left: 70px
+#enviar
+    font-size: 15px
+    font-family: Calibri
+    color: white
+    background: $primary-color
+    border: 0px
+    width: 100px
+    height: 25px
+    margin-left: 130px
+/*-----------------------------------*/
 p
     text-align: center
     font-size: 25px

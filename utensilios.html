@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/text.css" />
         <link rel="stylesheet" href="css/960.css" />
-        <!--<link rel="stylesheet" href="css/demo.css" />-->
         <link rel="stylesheet" href="css/estilosSas.css" />
         
     </head>
@@ -20,7 +19,7 @@
                    <div class="fondoCabecera">
                        <div class="opciones">
                            <img class="opcion" src="imagenes/iconos/logIn2.png" alt=""/>
-                            <a class="inicioSesion" href="">Inicio sesion</a>
+                            <a id="inicioSesion" onclick='cerrarSesion()' href="">Inicio sesion</a>
                            <img class="opcion" src="imagenes/iconos/logoCarrito2.png" alt=""/>
                        </div>
                     </div>
@@ -56,18 +55,56 @@
                     <div class="titulo">
                         <p>Categorias</p>
                     </div>
-                    <div class="menuVertical">
-                    <div class="vertical">
+                    <nav id="menu">
                         <ul>
-                          <li><a href="">Todos los productos</a></li>
-                          <li><a href="dulces.html">Dulces</a></li>
-                          <li><a href="">Salados</a></li>
-                          <li><a href="utensilios.html">Bebidas</a></li>
-                          <li><a href="utensilios.html">Utensilios</a></li>
+                            <li class="primero"><a href="#">Todos los productos</a>
+                            </li>
+                            <li><a href="#">Dulces</a>
+                            <ul>
+                                <li><a href="#">Opcion 1</a>
+                                </li>
+                                <li><a href="#">Opcion 2</a>
+                                </li>
+                                <li><a href="#">Opcion 3</a>
+                                </li>
+                            </ul>
+                            </li>
+                            <li><a href="#">Salados</a>
+                                <ul>
+                                <li><a href="#">Opcion 1</a>
+                                </li>
+                                <li><a href="#">Opcion 2</a>
+                                </li>
+                                <li><a href="#">Opcion 3</a>
+                                </li>
+                            </ul>
+                            </li>
+                            <li><a href="#">Bebidas</a>
+                                <ul>
+                                <li><a href="#">Opcion 1</a>
+                                </li>
+                                <li><a href="#">Opcion 2</a>
+                                </li>
+                                <li><a href="#">Opcion 3</a>
+                                </li>
+                            </ul>
+                            </li>
+                            <li><a href="#">Utensilios</a>
+                                <ul>
+                                    <li><a href="#">Opcion 1</a>
+                                    </li>
+                                    <li><a href="#">Opcion 2</a>
+                                    </li>
+                                    <li><a href="#">Opcion 3</a>
+                                    </li>
+                                    <li><a href="#">Opcion 4</a>
+                                    </li>
+                                    <li><a href="#">Opcion 5</a>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
-                        
-                    </div>
-                </div>
+                    </nav>
                 </div>
                 </section>
                 <section class="grid_9 ">

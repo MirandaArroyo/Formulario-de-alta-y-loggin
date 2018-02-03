@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Titulo de la web</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/text.css" />
+        <link rel="stylesheet" href="css/960.css" />
+        <!--<link rel="stylesheet" href="css/demo.css" />-->
+        <link rel="stylesheet" href="css/estilosSas.css" />
+        
+    </head>
+    <body onload="campoPaises()">
+        <main class="container_12">
+            <header class= "grid_12">
+                <div class="grid_3 alpha">
+                    <img class="imglogo" src="imagenes/logo.png" alt=""/>
+                </div>
+                <div class="grid_8 prefix_1 omega">
+                   <div class="fondoCabecera">
+                       <!-- <img class="fondoCab" src="imagenes/flor.png"/>-->
+                       <div class="opciones">
+                           <img class="opcion" src="imagenes/iconos/logIn2.png" alt=""/>
+                            <a id="inicioSesion" href="inicioSesion.html">Inicio sesion</a>
+                           <img class="opcion" src="imagenes/iconos/logoCarrito2.png" alt=""/>
+                       </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </header>
+            <div class="clear"></div>
+            <nav class="grid_12">
+                <div class="espacioMenu">
+                    <div class="menu">
+                        <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="dulces.html">Dulces</a></li>
+                          <li><a href="">Salados</a></li>
+                          <li><a href="">Bebidas</a></li>
+                          <li><a href="utensilios.html">Utensilios</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </nav>
+            <div class="clear"></div>
+            <div class="grid_6 prefix_6">
+                <!--buscador -->
+                <div class="buscador">
+                   <img class="busc" src="imagenes/buscador.png" alt=""/>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_12">
+                <div class="cuerpo">
+                    <div id="errores">
+                    </div>
+                    <div class="formulario">
+                        <div class="cabeceraFormulario">Formulario de registro</div>
+                        <!-- action="js/scriptormulario.js" si todo ha ido bien validandolo, el action nos lleva ala pagina que indiquemos, lo suyo es que si ha ido bien se dirija al index con el usuario loggeado-->
+                        <form class="formularioRegistro" 
+                              method="post"  onsubmit="validaformulario()" name="formularioR">
+                            <label for="nombre">Nombre: *</label>
+                            <input type="text" id="nombre" required />
+                            <br>
+                            <label for="apellidos">Apellidos: *</label>
+                            <input type="text" id="apellidos" required/>
+                            <br>
+                            <label for="correo">Correo electronico: *</label>
+                            <input type="email" id="correo"/>
+                            <br>
+                            <label for="contrasenia">Contrase&ntilde;a: *</label>
+                            <input type="password" id="contrasenia"/>
+                            <br>
+                            <label for="confirmacion">Vuelve a introducir la contrase&ntilde;a: *</label>
+                            <input type="password" id="confirmacion"/>
+                            <br>
+                            <label for="sexo">Sexo:</label>
+                            <input type="radio" name="sexo" value="hombre"> Hombre
+                            <input type="radio" name="sexo" value="mujer"> Mujer<br>
+                            <br>
+                            <label for="nacimiento">Fecha de nacimiento:</label>
+                            <input type="date" id="nacimiento"/>
+                            <br>
+                            <label for="direccion">Direccion:</label>
+                            <input type="text" id="direccion" oninput="muestraCampo();"/>
+                            <br>
+                            <label for="pais">Pais:</label>
+                            <select name="pais" id="pais">
+                            
+                            </select>
+                            <br>
+                            <div id="Campotarjeta" style="display:none;">
+                                <label for="tarjeta" >Numero de tarjeta de credito:  </label>
+                                <input type="text" id="tarjeta"/><br>
+                            </div>
+                            <br>
+                            <label for="novedades"> Deseo recibir notificaciones de novedades </label>
+                            <input type="checkbox" name="novedades" value="si"><br>
+                            <label for="revista">Deseo recibir la revista digital</label>
+                            <input type="checkbox" name="revista" value="si"><br><br>
+                            <input type="submit" id="enviar" value="Enviar"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <footer class="grid_12">
+                <div class="pie">
+                    <div class="icons">
+                        <img class="iconos" src="imagenes/iconos/facebook.png" alt=""/>
+                        <img class="iconos" src="imagenes/iconos/twitter.png" alt=""/>
+                        <img class="iconos" src="imagenes/iconos/instagram.png" alt=""/>
+                        <img class="iconos" src="imagenes/iconos/pintirest.png" alt=""/>
+                    </div>
+                    <div class="icons">
+                        <p>Aviso legal</p>
+                        <p>métodos de pago</p>
+                        <p>contacto</p>
+                    </div>
+                </div>
+            </footer>
+            <div class="clear"></div>
+        </main><!--fin del "div web" -->
+        <script type="text/javascript" src="js/scriptormulario.js"></script>
+        <script type="text/javascript" src="js/cifradoContrasenia.js"></script>
+    </body>
+</html>
