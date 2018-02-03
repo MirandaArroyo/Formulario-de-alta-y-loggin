@@ -54,10 +54,7 @@ function validaformulario(){
         guardarCookie("password", haseada, 2);
     }else{
         alert(mensaje);
-        //document.getElementById("errores").innerHTML=mensaje;
     }
-    
-    //return todoCorrecto;
     
 }
 //con esta funcion mostraremos el campo de la tarjeta de credito si el usuario ha introdicido direccion
@@ -139,13 +136,6 @@ function confirmaCookie(){
         alert("Los datos no son correctos");
     }
 }
- /*document.addEventListener("DOMContentLoaded", function(event) {
-    var sesionIniciada=obtenerCookie("logueado");
-     if(sesionIniciada){
-         document.getElementById("inicioSesion").text("Cerrar sesion");
-     }
-  });
-*/
 
 function cerrarSesion(){
     if(obtenerCookie('logueado')=='true'){
